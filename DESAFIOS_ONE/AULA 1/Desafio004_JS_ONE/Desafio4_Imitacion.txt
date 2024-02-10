@@ -1,0 +1,35 @@
+// saludo console.log("¡Bienvenido al programa!");
+
+// Mostrar el nombre console.log let nombre = "TuNombre"; console.log(¡Hola, ${nombre}!);
+
+// Mostrar mensaje alert let nombreAlert = "TuNombre"; alert(¡Hola, ${nombreAlert}!);
+
+// Preguntar por el lenguaje let lenguajeFavorito = prompt("¿Cuál es el lenguaje de programación que más te gusta?"); 
+console.log(Tu lenguaje de programación favorito es: ${lenguajeFavorito});
+
+// Sumar dos valores y mostrar el resultado let valor1 = 5; let valor2 = 10; let resultadoSuma = valor1 + valor2; 
+console.log(La suma de ${valor1} y ${valor2} es igual a ${resultadoSuma}.);
+
+// Restar dos valores y mostrar el resultado let valor3 = 15; let valor4 = 8; let resultadoResta = valor3 - valor4; 
+console.log(La diferencia entre ${valor3} y ${valor4} es igual a ${resultadoResta}.);
+
+// Verificar la edad ingresada por el usuario let edadUsuario = prompt("Ingrese su edad:"); 
+if (edadUsuario >= 18) { console.log("Eres mayor de edad."); } else { console.log("Eres menor de edad."); }
+
+// Verificar si un número es positivo, negativo o cero let numero = prompt("Ingrese un número:"); 
+if (numero > 0) { console.log("El número es positivo."); } else if (numero < 0) { console.log("El número es negativo."); 
+} else { console.log("El número es cero."); }
+
+// Mostrar números del 1 al 10 con un bucle while let contador = 1; while (contador <= 10) { console.log(contador); contador++; }
+
+// Determinar si una nota es aprobada o reprobada let nota = 8; if (nota >= 7) { console.log("Aprobado"); 
+} else { console.log("Reprobado"); }
+
+// Generar un número aleatorio y mostrarlo let numeroAleatorio = Math.random(); console.log(Número aleatorio: ${numeroAleatorio});
+
+// Generar un número entero aleatorio entre 1 y 10 let numeroEnteroAleatorio = Math.floor(Math.random() * 10) + 1; 
+console.log(Número entero aleatorio entre 1 y 10: ${numeroEnteroAleatorio});
+
+// Generar un número entero aleatorio entre 1 y 1000 let numeroEnteroAleatorio1000 = Math.floor(Math.random() * 1000) + 1; 
+console.log(Número entero aleatorio entre 1 y 1000: ${numeroEnteroAleatorio1000});
+

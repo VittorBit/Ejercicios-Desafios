@@ -1,0 +1,46 @@
+/Crea una función que calcule el promedio de los elementos en una lista de números./
+
+let ListaNumeros=[10,8,7,9,6,2,9]; console.log(El promedio de la Lista ${ListaNumeros} es: ${calcularPromdio(ListaNumeros)});
+
+function calcularPromdio(lista){ let suma=0; for(let indice = 0; indice < lista.length; indice++){ suma+=lista[indice]; } return (suma / lista.length).toFixed(2); }
+
+/Crea una función que muestre en la consola el número más grande y el número más pequeño en una lista./
+
+console.log(El número mayor de la lista es: ${numeroMayorDeLista(ListaNumeros)}); console.log(El número menor de la lista es: ${numeroMenorDeLista(ListaNumeros)});
+
+function numeroMayorDeLista(lista){ let numeroMayor=0; for(let indice=0; indice<lista.length;indice++){ if(lista[indice]>numeroMayor){ numeroMayor=lista[indice]; } } return numeroMayor; }
+
+function numeroMenorDeLista(lista){ let numeroMenor=lista[0]; for(let indice=0; indice<lista.length;indice++){ if(lista[indice]<numeroMenor){ numeroMenor=lista[indice]; } } return numeroMenor; }
+
+/Crea una función que devuelva la suma de todos los elementos en una lista./
+
+console.log(La suma de todos los elementos de la lista es: ${sumaDeLista(ListaNumeros)});
+
+function sumaDeLista(lista){ let suma =0; for(let indice=0; indice<lista.length;indice++){ suma+=lista[indice]; } return suma; }
+
+/Crea una función que devuelva la posición en la lista donde se encuentra un elemento pasado como parámetro, o -1 si no existe en la lista./
+
+let numeroPosicion=10; console.log(La posición del número es: ${existenciaNumeroEnLista(ListaNumeros,numeroPosicion)});
+
+function existenciaNumeroEnLista(lista,posicion){ for(let indice=0; indice<lista.length;indice++){ if(lista[indice]==posicion){ return indice+1; } } return -1; }
+
+/Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno./
+
+let arrayUno=[12,65,23,12,76,23]; let arrayDos=[18,5,17,8,14,17];
+
+let listaSumaFinal = sumaDeListas(arrayUno, arrayDos); 
+console.log(La nueva lista con la suma de las listas anteriores es: ${listaSumaFinal});
+
+function sumaDeListas(listaUno, listaDos){ 
+
+let listaSuma=[];
+
+if(listaUno.length==listaDos.length){
+    for(indice=0; indice < listaUno.length; indice++){
+       listaSuma.push(listaUno[indice] + listaDos[indice]);
+    }
+    return listaSuma;
+}else{
+    return "Las listas no tienen el mismo tamaño.";
+}
+}
